@@ -1,0 +1,578 @@
+{
+    "sections": [
+        {
+            "title": "Beasts",
+            "subtitle": "Wild of the Land",
+            "image": "bestiary_cards_beasts",
+            "entries": [
+                {
+                    "title": "Bears",
+                    "image": "bestiary_bear_654x727"
+                },
+                {
+                    "title": "Big Bad Wolf",
+                    "image": "bestiary_bigbadwolf_654x727"
+                },
+                {
+                    "title": "Dogs",
+                    "image": "bestiary_dog_654x727"
+                },
+                {
+                    "title": "Panthers",
+                    "image": "bestiary_panther_654x727"
+                },
+                {
+                    "title": "The Beast of Beauclair",
+                    "image": "bestiary_thebeastofbeauclair_654x727"
+                },
+                {
+                    "title": "Three Little Pigs",
+                    "image": "bestiary_threelittlepigs_654x727"
+                },
+                {
+                    "title": "Wild Boars",
+                    "image": "bestiary_wildboar_654x727"
+                },
+                {
+                    "title": "Wolves",
+                    "image": "bestiary_wolf_362x454"
+                }
+            ]
+        },
+        {
+            "title": "Cursed Ones",
+            "subtitle": "Damned and cursed",
+            "image": "bestiary_cards_cursedones",
+            "entries": [
+                {
+                    "title": "Archespore",
+                    "image": "bestiary_archespore_654x727"
+                },
+                {
+                    "title": "Berserkers",
+                    "image": "bestiary_berserkers_654x727"
+                },
+                {
+                    "title": "Botchlings",
+                    "image": "bestiary_botchling_654x727"
+                },
+                {
+                    "title": "The Toad Prince",
+                    "image": "bestiary_thetoadprince_654x727"
+                },
+                {
+                    "title": "Ulfhedinn",
+                    "image": "bestiary_ulfhedinn_654x727"
+                },
+                {
+                    "title": "Werewolves",
+                    "image": "bestiary_werewolf_654x727"
+                }
+            ]
+        },
+        {
+            "title": "Draconids",
+            "subtitle": "The flying predators",
+            "image": "bestiary_cards_draconids",
+            "entries": [
+                {
+                    "title": "Basilisks",
+                    "image": "bestiary_basilisk_654x727"
+                },
+                {
+                    "title": "Cockatrices",
+                    "image": "bestiary_cockatrice_654x727"
+                },
+                {
+                    "title": "Forktails",
+                    "image": "bestiary_forktail_654x727"
+                },
+                {
+                    "title": "Royal Wyverns",
+                    "image": "bestiary_royalwyvern_654x727"
+                },
+                {
+                    "title": "Shrieker",
+                    "image": "bestiary_shrieker_654x727"
+                },
+                {
+                    "title": "Silver Basilisk",
+                    "image": "bestiary_silverbasilisk_654x727"
+                },
+                {
+                    "title": "Slyzard",
+                    "image": "bestiary_slyzard_654x727"
+                },
+                {
+                    "title": "Slyzard Martiarchs",
+                    "image": "bestiary_slyzardmatriarch_654x727"
+                },
+                {
+                    "title": "The Dragon of Fyresdal",
+                    "image": "bestiary_thedragonoffyresdal_654x727"
+                },
+                {
+                    "title": "Wyverns",
+                    "image": "bestiary_wyvern_654x727"
+                }
+            ]
+        },
+        {
+            "title": "Elementa",
+            "subtitle": "Creations of magic",
+            "image": "bestiary_cards_elementa",
+            "entries": [
+                {
+                    "title": "Djinn",
+                    "image": "bestiary_djinn_654x727"
+                },
+                {
+                    "title": "Earth Elemental",
+                    "image": "bestiary_earthelemental_654x727"
+                },
+                {
+                    "title": "Fire Elemental",
+                    "image": "bestiary_fireelemental_654x727"
+                },
+                {
+                    "title": "Gargoyle",
+                    "image": "bestiary_gargoyle_511x582"
+                },
+                {
+                    "title": "Golem",
+                    "image": "bestiary_golem_657x727"
+                },
+                {
+                    "title": "Hound of the Wild Hunt",
+                    "image": "bestiary_houndofthewildhunt_654x727"
+                },
+                {
+                    "title": "Ice Elemental",
+                    "image": "bestiary_iceelemental_654x727"
+                },
+                {
+                    "title": "Moreau's Golem",
+                    "image": "bestiary_moreausgolem_654x727"
+                },
+                {
+                    "title": "Pixies",
+                    "image": "bestiary_pixie_654x727"
+                },
+                {
+                    "title": "The Apiarian Phantom",
+                    "image": "bestiary_theapiarianphantom_654x727"
+                },
+                {
+                    "title": "Therazane",
+                    "image": "bestiary_therazane_654x727"
+                }
+            ]
+        },
+        {
+            "title": "Hybrids",
+            "subtitle": "They toy with their prey",
+            "image": "bestiary_cards_hybrids",
+            "entries": [
+                {
+                    "title": "Erynia",
+                    "image": "bestiary_erynia_558x580"
+                },
+                {
+                    "title": "Griffin",
+                    "image": "bestiary_griffin_577x515"
+                },
+                {
+                    "title": "Harpy",
+                    "image": "bestiary_harpy_654x727"
+                },
+                {
+                    "title": "Melusine",
+                    "image": "bestiary_melusine_654x727"
+                },
+                {
+                    "title": "Opinicus",
+                    "image": "bestiary_opinicus_654x727"
+                },
+                {
+                    "title": "Salma",
+                    "image": "bestiary_salma_654x727"
+                },
+                {
+                    "title": "Siren",
+                    "image": "bestiary_siren_654x727"
+                },
+                {
+                    "title": "Succubus",
+                    "image": "bestiary_succubus_368x505"
+                }
+            ]
+        },
+        {
+            "title": "Insectoids",
+            "subtitle": "Venomous and dangerous",
+            "image": "bestiary_cards_insectoids",
+            "entries": [
+                {
+                    "title": "Arachasae",
+                    "image": "bestiary_arachasae_654x727"
+                },
+                {
+                    "title": "Arachnomorphs",
+                    "image": "bestiary_arachnomorph_654x727"
+                },
+                {
+                    "title": "Armored Arachasae",
+                    "image": "bestiary_armoredarachasae_654x727"
+                },
+                {
+                    "title": "Endrega Drones",
+                    "image": "bestiary_endregadrone_483x419"
+                },
+                {
+                    "title": "Endrega Warriors",
+                    "image": "bestiary_endregawarrior_576x394"
+                },
+                {
+                    "title": "Endrega Workers",
+                    "image": "bestiary_endregaworker_515x415"
+                },
+                {
+                    "title": "Giant Centipedes",
+                    "image": "bestiary_giantcentipede_654x727"
+                },
+                {
+                    "title": "Harrisi",
+                    "image": "bestiary_harrisi_654x727"
+                },
+                {
+                    "title": "Kikimore Warrior",
+                    "image": "bestiary_kikimorewarrior_654x727"
+                },
+                {
+                    "title": "Kikimore Workers",
+                    "image": "bestiary_kikimoreworker_654x727"
+                },
+                {
+                    "title": "Pale Widows",
+                    "image": "bestiary_palewidow_654x727"
+                },
+                {
+                    "title": "Venomous arachasae",
+                    "image": "bestiary_venomousarachas_654x727"
+                },
+                {
+                    "title": "Necrophages",
+                    "image": "bestiary_abaya_654x727"
+                },
+                {
+                    "title": "Alghoul",
+                    "image": "bestiary_alghoul_654x727"
+                },
+                {
+                    "title": "Drowner",
+                    "image": "bestiary_drowner_654x727"
+                },
+                {
+                    "title": "Foglet",
+                    "image": "bestiary_foglet_654x727"
+                },
+                {
+                    "title": "Ghoul",
+                    "image": "bestiary_ghoul_654x727"
+                },
+                {
+                    "title": "Grave Hag",
+                    "image": "bestiary_gravehag_654x727"
+                },
+                {
+                    "title": "Ignis Fatuus",
+                    "image": "bestiary_ignisfatuus_654x727"
+                },
+                {
+                    "title": "Mourntart",
+                    "image": "bestiary_mourntart_654x727"
+                },
+                {
+                    "title": "Rotfiend",
+                    "image": "bestiary_rotfiend_654x727"
+                },
+                {
+                    "title": "Scurver",
+                    "image": "bestiary_scurver_654x727"
+                },
+                {
+                    "title": "Spotted Wight",
+                    "image": "bestiary_spottedwight_654x727"
+                },
+                {
+                    "title": "Water Hag",
+                    "image": "bestiary_waterhag_654x727"
+                },
+                {
+                    "title": "Wight",
+                    "image": "bestiary_wight_654x727"
+                }
+            ]
+        },
+        {
+            "title": "Ogroids",
+            "subtitle": "Flee for your life",
+            "image": "bestiary_cards_ogroids",
+            "entries": [
+                {
+                    "title": "Cloud Giant",
+                    "image": "bestiary_cloudgiant_654x727"
+                },
+                {
+                    "title": "Cyclopses",
+                    "image": "bestiary_cyclops_654x727"
+                },
+                {
+                    "title": "Golyat",
+                    "image": "bestiary_golyat_654x727"
+                },
+                {
+                    "title": "Hagubman",
+                    "image": "bestiary_hagubman_654x727"
+                },
+                {
+                    "title": "Ice Giant",
+                    "image": "bestiary_icegiant_654x727"
+                },
+                {
+                    "title": "Ice troll",
+                    "image": "bestiary_icetroll_654x727"
+                },
+                {
+                    "title": "Nekkers",
+                    "image": "bestiary_nekker_654x727"
+                },
+                {
+                    "title": "Rock Troll",
+                    "image": "bestiary_rocktroll_654x727"
+                },
+                {
+                    "title": "Wham-a-Wham",
+                    "image": "bestiary_whamawham_654x727"
+                }
+            ]
+        },
+        {
+            "title": "Relicts",
+            "subtitle": "Never hunt in the woods",
+            "image": "bestiary_cards_relicts",
+            "entries": [
+                {
+                    "title": "Chorts",
+                    "image": "bestiary_chort_654x727"
+                },
+                {
+                    "title": "Crones",
+                    "image": "bestiary_crones_654x727"
+                },
+                {
+                    "title": "Doppler",
+                    "image": "bestiary_doppler_654x727"
+                },
+                {
+                    "title": "Fiends",
+                    "image": "bestiary_fiend_654x727"
+                },
+                {
+                    "title": "Fugas",
+                    "image": "bestiary_fugas_654x727"
+                },
+                {
+                    "title": "Godling",
+                    "image": "bestiary_godling_654x727"
+                },
+                {
+                    "title": "Grottore",
+                    "image": "bestiary_grottore_654x727"
+                },
+                {
+                    "title": "Howler",
+                    "image": "bestiary_howler_654x727"
+                },
+                {
+                    "title": "Imp",
+                    "image": "bestiary_imp_654x727"
+                },
+                {
+                    "title": "Kernun",
+                    "image": "bestiary_kernun_654x727"
+                },
+                {
+                    "title": "Leshen",
+                    "image": "bestiary_leshen_654x727"
+                },
+                {
+                    "title": "Morvudd",
+                    "image": "bestiary_morvudd_654x727"
+                },
+                {
+                    "title": "Shaelmaar",
+                    "image": "bestiary_shaelmaar_654x727"
+                },
+                {
+                    "title": "Shaelmaar from the Emperor of Nilfgaard",
+                    "image": "bestiary_shaelmaarfromeon_727x654"
+                },
+                {
+                    "title": "Spriggans",
+                    "image": "bestiary_spriggan_654x727"
+                },
+                {
+                    "title": "Sylvans",
+                    "image": "bestiary_sylvan_654x727"
+                },
+                {
+                    "title": "The Caretaker",
+                    "image": "bestiary_thecaretaker_654x727"
+                },
+                {
+                    "title": "The Monster of Tufo",
+                    "image": "bestiary_themonsteroftufo_654x727"
+                },
+                {
+                    "title": "Wicked Witch",
+                    "image": "bestiary_wickedwitch_654x727"
+                },
+                {
+                    "title": "Woodland Spirit",
+                    "image": "bestiary_woodlandspirit_654x727"
+                }
+            ]
+        },
+        {
+            "title": "Specters",
+            "subtitle": "Hunters of the Night",
+            "image": "bestiary_cards_specters",
+            "entries": [
+                {
+                    "title": "Barghest",
+                    "image": "bestiary_barghest_654x727"
+                },
+                {
+                    "title": "Beann'shies",
+                    "image": "bestiary_beannshie_654x727"
+                },
+                {
+                    "title": "Daphne's Wraith",
+                    "image": "bestiary_daphneswraith_654x727"
+                },
+                {
+                    "title": "Devil by the Well",
+                    "image": "bestiary_devilbythewell_654x727"
+                },
+                {
+                    "title": "Ethereal",
+                    "image": "bestiary_ethereal_654x727"
+                },
+                {
+                    "title": "Hym",
+                    "image": "bestiary_hym_654x727"
+                },
+                {
+                    "title": "Jenny o' the Woods",
+                    "image": "bestiary_jennyothewoods_654x727"
+                },
+                {
+                    "title": "Longlocks",
+                    "image": "bestiary_longlocks_654x727"
+                },
+                {
+                    "title": "Nightwraith",
+                    "image": "bestiary_nightwraith_654x727"
+                },
+                {
+                    "title": "Noonwraith",
+                    "image": "bestiary_noonwraith_654x727"
+                },
+                {
+                    "title": "Penitent",
+                    "image": "bestiary_penitent_654x727"
+                },
+                {
+                    "title": "Plague Maiden",
+                    "image": "bestiary_plaguemaiden_654x727"
+                },
+                {
+                    "title": "Umbra",
+                    "image": "bestiary_umbra_654x727"
+                },
+                {
+                    "title": "The White Lady",
+                    "image": "bestiary_thewhitelady_654x727"
+                },
+                {
+                    "title": "The Wraith from the Painting",
+                    "image": "bestiary_thewraithfromthepainting_654x727"
+                },
+                {
+                    "title": "Wraith",
+                    "image": "bestiary_wraith_654x727"
+                }
+            ]
+        },
+        {
+            "title": "Vampires",
+            "subtitle": "The vampire alights",
+            "image": "bestiary_cards_vampires",
+            "entries": [
+                {
+                    "title": "Alpha Garkain",
+                    "image": "bestiary_alphagarkain_654x727"
+                },
+                {
+                    "title": "Alp",
+                    "image": "bestiary_alp_654x727"
+                },
+                {
+                    "title": "Bruxa",
+                    "image": "bestiary_bruxa_654x727"
+                },
+                {
+                    "title": "Dettlaff van der Eretein",
+                    "image": "bestiary_dettlaffvandereretein_654x727"
+                },
+                {
+                    "title": "Ekimmara",
+                    "image": "bestiary_ekimmara_654x727"
+                },
+                {
+                    "title": "Fleder",
+                    "image": "bestiary_fleder_654x727"
+                },
+                {
+                    "title": "Gael",
+                    "image": "bestiary_gael_654x727"
+                },
+                {
+                    "title": "Garkain",
+                    "image": "bestiary_garkain_654x727"
+                },
+                {
+                    "title": "Higher Vampire",
+                    "image": "bestiary_highervampire_654x727"
+                },
+                {
+                    "title": "Katakan",
+                    "image": "bestiary_katakan_654x727"
+                },
+                {
+                    "title": "Protofleder",
+                    "image": "bestiary_protofleder_654x727"
+                },
+                {
+                    "title": "Sarasti",
+                    "image": "bestiary_sarasti_654x727"
+                },
+                {
+                    "title": "The Bruxa of Corvo Bianco",
+                    "image": "bestiary_thebruxaofcorvobianco_654x727"
+                }
+            ]
+        }
+    ]
+}
