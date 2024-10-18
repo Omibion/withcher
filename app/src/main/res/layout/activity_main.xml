@@ -14,7 +14,7 @@
         android:id="@+id/text_bestiary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enciclopedia of enemies" />
+        android:text="Enciclopedya of enemies" />
 
     <!-- Segundo TextView debajo del primero -->
     <TextView
