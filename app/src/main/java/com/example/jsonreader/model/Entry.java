@@ -4,9 +4,9 @@ public class Entry {
     private String title;
     private String image;
 
-    public Entry(String image, String title) {
-        this.image = image;
+    public Entry(String title, String image) {
         this.title = title;
+        this.image = image;
     }
 
     public String getTitle() {

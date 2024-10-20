@@ -11,6 +11,7 @@ import com.example.jsonreader.model.BestiaryParser;
 import com.example.jsonreader.model.Entry;
 import com.example.jsonreader.model.Section;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import adapters.BichosAdapter;
@@ -50,7 +51,12 @@ public class MainActivity extends AppCompatActivity implements TiposBichosAdapte
     public void onCardSelected(Section selected) {
         // Aquí se manejan los eventos de selección de tipo de bicho
         List<Entry> entries = selected.getEntries(); // Obtiene los bichos de la sección seleccionada
-        bichosAdapter = new BichosAdapter(this, entries, null); // Crea el adaptador para los bichos
+
+        // Crea el adaptador para los bichos con la lista de entradas de la sección seleccionada
+        bichosAdapter = new BichosAdapter(this, (Section) selected, null); // Pasar la sección seleccionada
+
         rcyListMons.setAdapter(bichosAdapter); // Asigna el adaptador al RecyclerView de bichos
     }
+
+
 }

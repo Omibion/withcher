@@ -9,11 +9,10 @@ public class Section {
     private String image;
     private List<Entry> entries;
 
-    public Section(String subtitle, String title, String image) {
-        this.subtitle = subtitle;
+    public Section(String title, String subtitle, String image) {
         this.title = title;
+        this.subtitle = subtitle;
         this.image = image;
-
         entries = new ArrayList<>();
     }
 

@@ -32,7 +32,7 @@ public class BestiaryParser {
             JSONObject arrel = new JSONObject(json);
             JSONArray sections = arrel.getJSONArray("sections");
 
-            for (int i = 0; i < arrel.length(); i++) {
+            for (int i = 0; i < sections.length(); i++) {
                 JSONObject section = sections.getJSONObject(i);
                 String title = (section.getString("title"));
                 String subtitle = (section.getString("subtitle"));
@@ -42,7 +42,7 @@ public class BestiaryParser {
                 //2.- Per cada section, buscas las entries
                 JSONArray entries = section.getJSONArray("entries");
                 for (int j = 0; j < entries.length(); j++) {
-                    JSONObject entry = entries.getJSONObject(i);
+                    JSONObject entry = entries.getJSONObject(j);
                     title = entry.getString("title");
                     image = entry.getString("image");
                     Entry ent = new Entry(title, image);

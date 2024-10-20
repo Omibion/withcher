@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+
 import com.example.jsonreader.R;
 import com.example.jsonreader.model.Entry;
 import com.example.jsonreader.model.Section;
@@ -29,14 +30,14 @@ public class BichosAdapter extends RecyclerView.Adapter<BichosAdapter.ViewHolder
         void onCardSelected(Entry selected);
     }
 
-    public BichosAdapter(Context context, List<Section> bestiary, BichosAdapterListener listener) {
+    public BichosAdapter(Context context, Section section, BichosAdapterListener listener) {
         this.context = context;
         this.listener = listener;
 
-        // Asumimos que los entries están en la sección de bestiary
-        // Puedes adaptar esto si necesitas una estructura diferente
-        this.entries = bestiary.get(0).getEntries(); // Obtener los entries de la primera sección por ejemplo
+        // Asigna las entradas de la sección seleccionada
+        this.entries = section.getEntries(); // Obtener los entries de la sección seleccionada
     }
+
 
     @NonNull
     @Override
@@ -49,7 +50,24 @@ public class BichosAdapter extends RecyclerView.Adapter<BichosAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Entry current = entries.get(position);
         holder.txvName.setText(current.getTitle());
-        Glide.with(context).load(current.getImage()).into(holder.imvPhoto);
+
+        // Obtiene el nombre de la imagen desde el JSON
+        String imageName = current.getImage(); // Asegúrate de que esto contenga solo el nombre de la imagen sin extensión
+
+        // Obtén el ID del recurso drawable correspondiente
+        int resId = context.getResources().getIdentifier(imageName, "drawable", context.getPackageName());
+
+        // Cargar imagen usando Glide
+        if (resId != 0) {
+            Glide.with(context)
+                    .load(resId) // Carga la imagen desde drawable
+                    .placeholder(R.drawable.bestiary_abaya_654x727) // Imagen de placeholder
+                    .error(R.drawable.bestiary_abaya_654x727) // Imagen de error si falla la carga
+                    .into(holder.imvPhoto); // Donde se mostrará la imagen
+        } else {
+            // Si no se encuentra la imagen, establece una imagen por defecto
+            holder.imvPhoto.setImageResource(R.drawable.bestiary_abaya_654x727); // Reemplaza con una imagen predeterminada
+        }
 
         holder.itemView.setOnClickListener(v -> {
             if (listener != null) {
@@ -59,6 +77,7 @@ public class BichosAdapter extends RecyclerView.Adapter<BichosAdapter.ViewHolder
 
         Log.d("BICHOS_ADAPTER", "Mostrando bicho: " + current.getTitle());
     }
+
 
     @Override
     public int getItemCount() {
