@@ -2,6 +2,7 @@ package com.example.jsonreader;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,52 +12,46 @@ import com.example.jsonreader.model.BestiaryParser;
 import com.example.jsonreader.model.Entry;
 import com.example.jsonreader.model.Section;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import adapters.BichosAdapter;
-import adapters.TiposBichosAdapter; // Asegúrate de tener este adaptador creado
+import adapters.TiposBichosAdapter;
 
 public class MainActivity extends AppCompatActivity implements TiposBichosAdapter.TiposBichosAdapterListener {
 
     private RecyclerView rcyListBest;
     private RecyclerView rcyListMons;
-    private TiposBichosAdapter tiposBichosAdapter; // Adapter para tipos de bichos
-    private BichosAdapter bichosAdapter; // Adapter para bichos en la sección
+    private TiposBichosAdapter tiposBichosAdapter;
+    private BichosAdapter bichosAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Obtiene la lista de secciones del bestiario
+
+        ImageButton btnClose = findViewById(R.id.btnsalir);
+        btnClose.setOnClickListener(v -> finish());
+
+
         List<Section> bestiary = BestiaryParser.getBestiary(this);
         Log.d("WITCHER", bestiary.toString());
 
-        // Inicializa los RecyclerView
         rcyListBest = findViewById(R.id.rcyListbest);
         rcyListMons = findViewById(R.id.rcyListmons);
 
-        // Configura el RecyclerView para tipos de bichos
         rcyListBest.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         tiposBichosAdapter = new TiposBichosAdapter(this, bestiary, this);
         rcyListBest.setAdapter(tiposBichosAdapter);
 
-        // Configura el RecyclerView para bichos
         rcyListMons.setLayoutManager(new LinearLayoutManager(this));
-        // Inicialmente, puedes no establecer un adaptador si no hay secciones seleccionadas
     }
 
     @Override
     public void onCardSelected(Section selected) {
-        // Aquí se manejan los eventos de selección de tipo de bicho
-        List<Entry> entries = selected.getEntries(); // Obtiene los bichos de la sección seleccionada
+        List<Entry> entries = selected.getEntries();
 
-        // Crea el adaptador para los bichos con la lista de entradas de la sección seleccionada
-        bichosAdapter = new BichosAdapter(this, (Section) selected, null); // Pasar la sección seleccionada
-
-        rcyListMons.setAdapter(bichosAdapter); // Asigna el adaptador al RecyclerView de bichos
+        bichosAdapter = new BichosAdapter(this, selected, null);
+        rcyListMons.setAdapter(bichosAdapter);
     }
-
-
 }

@@ -2,16 +2,17 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/idcard">
+    android:id="@+id/idcard"
+    android:padding="10dp">
 
 
     <ImageView
         android:id="@+id/fototipo"
-        android:layout_width="250dp"
-        android:layout_height="350dp"
-        android:scaleType="centerCrop"
+        android:layout_width="180dp"
+        android:layout_height="295dp"
         android:layout_gravity="center"
-    android:src="@drawable/bestiary_cards_beasts" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/bestiary_cards_beasts" />
 
 
     <TextView
@@ -20,9 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginTop="20dp"
-        android:background="#99000000"
         android:padding="10dp"
         android:text="Beasts"
+        android:fontFamily="@font/the_witcher"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"

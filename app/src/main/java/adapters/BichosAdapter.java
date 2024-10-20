@@ -34,8 +34,8 @@ public class BichosAdapter extends RecyclerView.Adapter<BichosAdapter.ViewHolder
         this.context = context;
         this.listener = listener;
 
-        // Asigna las entradas de la sección seleccionada
-        this.entries = section.getEntries(); // Obtener los entries de la sección seleccionada
+
+        this.entries = section.getEntries();
     }
 
 
@@ -51,22 +51,19 @@ public class BichosAdapter extends RecyclerView.Adapter<BichosAdapter.ViewHolder
         Entry current = entries.get(position);
         holder.txvName.setText(current.getTitle());
 
-        // Obtiene el nombre de la imagen desde el JSON
-        String imageName = current.getImage(); // Asegúrate de que esto contenga solo el nombre de la imagen sin extensión
+        String imageName = current.getImage();
 
-        // Obtén el ID del recurso drawable correspondiente
         int resId = context.getResources().getIdentifier(imageName, "drawable", context.getPackageName());
 
-        // Cargar imagen usando Glide
         if (resId != 0) {
             Glide.with(context)
-                    .load(resId) // Carga la imagen desde drawable
-                    .placeholder(R.drawable.bestiary_abaya_654x727) // Imagen de placeholder
-                    .error(R.drawable.bestiary_abaya_654x727) // Imagen de error si falla la carga
-                    .into(holder.imvPhoto); // Donde se mostrará la imagen
+                    .load(resId)
+                    .placeholder(R.drawable.bestiary_abaya_654x727)
+                    .error(R.drawable.bestiary_abaya_654x727)
+                    .into(holder.imvPhoto);
         } else {
-            // Si no se encuentra la imagen, establece una imagen por defecto
-            holder.imvPhoto.setImageResource(R.drawable.bestiary_abaya_654x727); // Reemplaza con una imagen predeterminada
+
+            holder.imvPhoto.setImageResource(R.drawable.bestiary_abaya_654x727);
         }
 
         holder.itemView.setOnClickListener(v -> {
@@ -91,8 +88,8 @@ public class BichosAdapter extends RecyclerView.Adapter<BichosAdapter.ViewHolder
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            txvName = itemView.findViewById(R.id.txvName); // Asegúrate de que este ID exista en tu layout
-            imvPhoto = itemView.findViewById(R.id.imvPhoto); // Asegúrate de que este ID exista en tu layout
+            txvName = itemView.findViewById(R.id.txvName);
+            imvPhoto = itemView.findViewById(R.id.imvPhoto);
         }
     }
 }

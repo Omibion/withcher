@@ -1,6 +1,7 @@
 package adapters;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -21,6 +23,7 @@ public class TiposBichosAdapter extends RecyclerView.Adapter<TiposBichosAdapter.
     private List<Section> secciones;
     private Context context;
     private TiposBichosAdapterListener listener;
+    private int selectedPosition = -1;
 
     public interface TiposBichosAdapterListener {
         void onCardSelected(Section selected);
@@ -40,28 +43,37 @@ public class TiposBichosAdapter extends RecyclerView.Adapter<TiposBichosAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Section section = secciones.get(position);
-        holder.textView.setText(section.getTitle());
+    public void onBindViewHolder(@NonNull ViewHolder holder, int XXX_DO_NOT_USE_ME) {
+        Section section = secciones.get(holder.getAdapterPosition());
+        holder.textView.setText(section.getTitle().replace(" ", "\n"));
 
-        // Carga la imagen correspondiente a la sección desde drawable
-        String imageName = section.getImage(); // Asegúrate de que esto contenga solo el nombre de la imagen sin extensión
+        String imageName = section.getImage();
         int resId = context.getResources().getIdentifier(imageName, "drawable", context.getPackageName());
 
-        // Comprueba si la imagen se ha encontrado
         if (resId != 0) {
-            Glide.with(context).load(resId).into(holder.fototipo); // Cargar imagen usando Glide
+            Glide.with(context).load(resId).into(holder.fototipo);
         } else {
-            // Opcional: manejar el caso en que la imagen no se encuentra (por ejemplo, cargar una imagen por defecto)
-            holder.fototipo.setImageResource(R.drawable.bestiary_cards_beasts); // Reemplaza "default_image" con una imagen predeterminada que tengas
+            holder.fototipo.setImageResource(R.drawable.bestiary_cards_beasts);
+        }
+
+
+        if (holder.getAdapterPosition() == selectedPosition) {
+            holder.itemView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+        } else {
+            holder.itemView.setBackgroundColor(Color.TRANSPARENT);
         }
 
         holder.itemView.setOnClickListener(v -> {
+
+            selectedPosition = holder.getAdapterPosition();
+            notifyDataSetChanged();
+
             if (listener != null) {
                 listener.onCardSelected(section);
             }
         });
     }
+
 
 
     @Override
@@ -74,8 +86,8 @@ public class TiposBichosAdapter extends RecyclerView.Adapter<TiposBichosAdapter.
         ImageView fototipo;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            textView = itemView.findViewById(R.id.textoSobreImagen); // Asegúrate de que este ID exista en tu layout
-            fototipo = itemView.findViewById(R.id.fototipo); // Asegúrate de que este ID exista en tu layout
+            textView = itemView.findViewById(R.id.textoSobreImagen);
+            fototipo = itemView.findViewById(R.id.fototipo);
         }
     }
 }
